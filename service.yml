@@ -1,0 +1,10 @@
+k8s apiVersion: v1
+kind: Service
+metadata:
+  name: amerisourcebergenapp
+spec:
+  selector:
+    app: amerisourcebergenapp
+  ports:
+  - port: 100
+    targetPort: 8080
